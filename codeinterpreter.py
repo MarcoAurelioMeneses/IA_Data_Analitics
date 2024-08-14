@@ -16,7 +16,7 @@ assistant = client.beta.assistants.create(
 
 # Upload a file with an "assistants" purpose
 file = client.files.create(
-  file=open("dados/uploaded_3d07cbcc-dd09-43e8-bb19-c22767e4f935.csv", "rb"),
+  file=open("1ff56350-876b-46f3-b5fe-9c840fb11cd3.xlsx", "rb"),
   purpose='assistants'
 )
 
@@ -36,7 +36,7 @@ thread = client.beta.threads.create(
   messages=[
     {
       "role": "user",
-      "content": "Preciso saber quantas escolas por CREDE estão cadastradas",
+      "content": "Qual os dados da coluna M na aba Cadastro de Escolas [Base]",
       "attachments": [
         {
           "file_id": file.id,
